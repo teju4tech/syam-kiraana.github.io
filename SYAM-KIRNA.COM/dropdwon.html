@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #707978;
+
+    }
+    .dropdown{
+        font-size: 1.5rem;
+        border: none;
+        outline: none;
+        padding: 16px;
+        color: lightblue;
+        overflow: hidden;
+    }
+    .dropbtn {
+        font-size: 20px;
+        padding: 25px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        margin: 2px;
+        background: linear-gradient(65deg,#f0c51f 40%,#1ff0d7 40%);
+    }
+
+    .dropitems {
+        display: none;
+        position: absolute;
+        min-width: 150px;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    .dropitems a{
+        float: none;
+        color: #000;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+
+    }
+    .dropitems a:hover{
+       background-color: #ddd;
+       width: auto;
+        
+    }
+    .dropdown:hover .dropitems{
+     display: block;
+    }
+</style>
+<body>
+   <div class="dropdown">
+    <button type="submit" class="dropbtn">Dropdown</button>
+    <div class="dropitems">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+        <a href="#">Link 4</a>
+    </div>
+   </div> 
+</body>
+</html>

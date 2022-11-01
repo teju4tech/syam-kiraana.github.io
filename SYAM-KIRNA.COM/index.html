@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teju di Dukaan</title>
+    </head>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+   /* Css Reset */
+   body{
+       color: #fff;
+       margin: 0px;
+       height: 1500px;
+       background-color: #12192c;
+       padding: 0px;
+       color: #fff;
+       
+       
+       
+   }
+   .left{
+         display: inline-block;
+         /* border: 2px solid red; */
+         position: absolute;
+         left: 0px;
+         top: 5px;
+
+   }
+
+   .left img{
+       width: 136px;
+       filter: invert(100%);
+       border-radius: 9px;
+       margin-bottom: 20px;
+       margin-top: 20px;
+       margin-left: 20px;
+   }
+   .left div{
+       text-align: center;
+       font-size: 18px;
+   }
+   .mid{
+     display: block;  
+     width: 49%;
+     margin: 0px auto;
+    /* border: 2px solid #Fff; */
+    border-radius: 10px;
+
+   }
+   .right{
+      position: absolute;  
+      display: inline-block;
+      right: 34px;
+      top: 5px;  
+      /* border: 2px solid yellow; */
+   }
+   .navbar{
+       display: inline-block;
+       background-color: white; 
+       border-radius: 10px;
+   }
+
+   .navbar li{
+       
+       display: inline-block;
+       font-size: 18px;
+
+       
+   }
+
+   .navbar li a{
+         color: rgb(32, 226, 240);
+         font-weight: 800;
+         font-family: cursive;
+         text-decoration: none;
+         padding: 34px 10px;
+          
+   }
+   
+
+   .navbar li a:hover, .navbar li a.active{
+         text-decoration: underline;
+         text-decoration: underline;
+         color: rgb(255, 51, 0);
+           
+   }
+
+   .btn{
+       margin: 0px 9px ;
+       color: #ffff;
+       background-color: #222;
+       padding: 4px 0px;
+       /* border: 2px solid green; */
+       border-radius: 10px;
+       font-size: 17px;
+       cursor: pointer;
+      
+   }
+   .btn:hover{
+       background-color: rgb(220, 238, 225);
+       color: rgb(236, 17, 17);
+       border: 2px solid red;
+   }
+
+   
+ 
+
+ 
+
+.cantainer button{
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+
+}
+.header span1{
+    color: rgb(255, 51, 0);
+    font-family: cursive;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    border-top: solid rgb(32, 226, 240);
+}
+.header span{
+    color: rgb(32, 226, 240);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    border-bottom: solid rgb(255, 51, 0);
+}
+
+.main img{
+    height: 500px;
+    width: 780px;
+    margin-top: 20px;
+    margin-left: 190px;
+    border: 3px solid orangered;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+
+/* animation===================== */
+
+@keyframes ani01{
+    0%{
+        transform: rotate(0deg);
+    }  
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.shape-01{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border: 3px solid orangered;
+    left: 5%;
+    top: 50%;
+    animation: ani01 2s linear infinite;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items: center;
+    color:rgb(32, 226, 240) ;
+    text-align: center;
+    padding-top: 30px;
+}
+/* animation ends ===================== */
+
+.container{
+    border: 4px solid blue;
+}
+
+
+/* Container holding the image and the text */
+
+
+/* dropdown menu ============================================================= */
+
+.dropdown{
+        font-size: 1.5rem;
+        border: none;
+        outline: none;
+        padding: 16px;
+        margin-top: 20px;
+        margin-left: 10px;
+        color: lightblue;
+        overflow: hidden;
+        
+    }
+
+    .dropdown img {
+        height:200px;
+        width: 300px;
+        margin-top: 100px;
+        margin-left: 80px;
+        border: 3px solid orangered;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .dropbtn {
+        font-size: 20px;
+        padding: 25px;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        margin: 2px;
+        background: linear-gradient(65deg,#f0c51f 40%,#1ff0d7 40%);
+        
+    }
+
+    .dropitems {
+        display: none;
+        position: absolute;
+        min-width: 300px;
+        border: 4px solid orangered;
+        border-radius: 10px;
+        background-color: #1ff0d7;
+        cursor: pointer;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        margin-left: 340px;
+        z-index: 1;
+        transition: all 3.2s ease;
+    }
+    
+    .dropitems a{
+        float: none;
+        color: #000;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+
+    }
+    .dropitems a:hover{
+       background-color: #f9f9f9;
+       width: auto;
+        
+    }
+    .dropdown:hover .dropitems{
+     display: block;
+    }
+
+/* dropdown menu ============================================================= */
+/* big -container ================================= */
+/* .big{
+ height: 100vh;
+ width: 100vh;
+ background-color: #1ff0d7;
+
+} */
+/* big -container ================================= */
+
+
+</style>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+          <img src="syam kirana store.PNG" alt="" srcset="">
+          <div> <span1>Teju</span1> <span> Dukan</span></div>
+        </div>
+        <!-- mid box for navegation bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Items view</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+         <button class="btn" ><a href="https://www.gmail.com">Call us now</a> </button>
+         <button class="btn"><a href="https://github.com/teju4tech/">Email Us</a> </button>
+        </div>
+    </header>
+    <!-- This is image container satrts here====================== -->
+    <conatiner class="main">
+        <img src="item1.jpg" alt="" srcset="">
+        <!-- shape -->
+    <div class="shape-01">
+    Syam
+    </div>
+    </conatiner>
+    <!-- This is image container  ends here====================== -->
+
+    <!-- dropdown matter bhai ====================== -->
+    <container class="dropdown"> 
+        <img src="item.jpg" alt="" class="dropbtn" srcset="">
+        <div class="dropitems">
+            <a href="#">The maggi nudals</a>
+            <a href="#">MRP: $10</a>
+            <a href="#">GST: $1.5</a>
+            <a href="#">RP: $7</a>
+        </div>
+
+    </container>
+    
+    <container class="dropdown"> 
+        <img src="item.jpg" alt="" class="dropbtn" srcset="">
+        <div class="dropitems">
+            <a href="#">The patanjali Shampu</a>
+            <a href="#">MRP: $35</a>
+            <a href="#">GST: $2.5</a>
+            <a href="#">RP: $30</a>
+        </div>
+
+    </container>
+
+    <container class="dropdown"> 
+        <img src="item.jpg" alt="" class="dropbtn" srcset="">
+        <div class="dropitems">
+            <a href="#">Panir 1 kg</a>
+            <a href="#">MRP: $25</a>
+            <a href="#">GST: $1.25</a>
+            <a href="#">RP: $22</a>
+        </div>
+
+    </container>
+
+    <container class="dropdown"> 
+        <img src="item.jpg" alt="" class="dropbtn" srcset="">
+        <div class="dropitems">
+            <a href="#">Sugar 1kg</a>
+            <a href="#">MRP: $10</a>
+            <a href="#">GST: $1.05</a>
+            <a href="#">RP: $9</a>
+        </div>
+
+    </container>
+    <!--dropdown matter  bhai ====================== --> 
+    
+<!-- badhe containers ===============     -->
+<!-- <big-container class="big">
+
+ <h1>hello</h1>
+</big-container> -->
+<!-- badhe containers ===============     -->
+    <!-- https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTI5MTcyNjE1MTcxMTc3?story_media_id=2807478302867073243_51198328198&utm_medium=share_sheet -->
+</body>
+</html>
